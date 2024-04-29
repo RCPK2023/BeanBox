@@ -20,22 +20,22 @@ const App = () => {
     <div>
      
       <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Dashboard/>}/>
-        <Route path='/salesitem' element={<SalesItem/>}/>
-        <Route path='/salessummary' element={<SalesSummary/>}/>
-        <Route path='/categories' element={<Categories/>}/>
-        <Route path='/itemlist' element={<ItemList/>}/>
-        <Route path='/createitem' element={<CreateItem/>}/>
-        <Route path='/inventorycounts' element={<InventoryCounts/>}/>
-<Route path='/inventoryhistory' element={<InventoryHistory/>}/>
-<Route path='/inventoryvaluation' element={<InventoryValuation/>}/>
-<Route path='/purchaseorders' element={<PurchaseOrders/>}/>
-<Route path='/createpurchaseorder' element={<CreatePurchaseOrder/>}/>
-<Route path='/stockadjustments' element={<StockAdjustments/>}/>
-<Route path='/addstockadjustments' element={<AddStockAdjustments/>}/>
-<Route path='/employee' element={<Employee/>}/>
-      </Routes>
+        <Routes>
+          <Route path='/' element={<Dashboard/>}/>
+          <Route path='/salesitem' element={<SalesItem/>}/>
+          <Route path='/salessummary' element={<SalesSummary/>}/>
+          <Route path='/categories' element={<Categories/>}/>
+          <Route path='/itemlist' element={<ItemList/>}/>
+          <Route path='/createitem' element={<CreateItem/>}/>
+          <Route path='/inventorycounts' element={<InventoryCounts/>}/>
+          <Route path='/inventoryhistory' element={<InventoryHistory/>}/>
+          <Route path='/inventoryvaluation' element={<InventoryValuation/>}/>
+          <Route path='/purchaseorders' element={<PurchaseOrders/>}/>
+          <Route path='/createpurchaseorder' element={<CreatePurchaseOrder/>}/>
+          <Route path='/stockadjustments' element={<StockAdjustments/>}/>
+          <Route path='/addstockadjustments' element={<AddStockAdjustments/>}/>
+          <Route path='/employee' element={<Employee/>}/>
+        </Routes>
       </BrowserRouter>
     </div>
   )
