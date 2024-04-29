@@ -110,11 +110,13 @@ const Navbar = () => {
           }}
         >
           <Container>
-          <Link to="/purchaseorders">Purchase Stocks</Link><br/>
-<Link to="/stockadjustments">Stock Adjustments</Link><br/>
-<Link to="/inventorycounts">Inventory counts</Link><br/>
-<Link to="/inventoryhistory">Inventory history</Link><br/>
-<Link to="/inventoryvaluation">Inventory Valuation</Link><br/>
+          <Link to="/purchaseorders">Add Stocks</Link><br/>
+<Link to="/stockadjustments">Update Stock Quantity</Link><br/>
+{/* 
+Will make it so this becomes as a whole thing! */}
+{/* <Link to="/inventorycounts">Inventory counts</Link><br/> */}
+{/* <Link to="/inventoryhistory">Inventory history</Link><br/>
+<Link to="/inventoryvaluation">Inventory Valuation</Link><br/> */}
 
           </Container>
         
