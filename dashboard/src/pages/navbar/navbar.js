@@ -110,7 +110,7 @@ const Navbar = () => {
           }}
         >
           <Container>
-          <Link to="/purchaseorders">Purchase Orders</Link><br/>
+          <Link to="/purchaseorders">Purchase Stocks</Link><br/>
 <Link to="/stockadjustments">Stock Adjustments</Link><br/>
 <Link to="/inventorycounts">Inventory counts</Link><br/>
 <Link to="/inventoryhistory">Inventory history</Link><br/>

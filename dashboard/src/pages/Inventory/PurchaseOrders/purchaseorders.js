@@ -31,13 +31,13 @@ const Purchaseorders = () => {
     <div id="container">
     <Navbar></Navbar>
     <Container sx={containerStyle}>
-        <Typography variant="h5" gutterBottom>Purchase Orders</Typography>
+        <Typography variant="h5" gutterBottom>Purchase Stocks</Typography>
         <Typography variant="body1" gutterBottom>
           Plan purchases, send orders to suppliers and track stock reciepts
         </Typography>
         <Button variant="contained" sx={{ marginBottom: '20px' }}
         onClick={handlePurchaseOrder}>
-          Add Purchase Order
+          Add Purchase Stocks
         </Button>
       </Container>
 </div>

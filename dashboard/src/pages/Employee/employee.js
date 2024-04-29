@@ -33,11 +33,32 @@ const rows = [
     <div id="container">
     <Navbar></Navbar>
     <Container sx={containerStyle}>
-            <Grid container direction="column" spacing={2}>
+
+        <Grid container direction="column" spacing={2}>
+
+<Grid item>
+<Grid container direction="row" spacing={2}>
                 <Grid item>
-                    <Button variant="contained" color="primary">Add Employee</Button>
+                    <Button variant="contained" color="primary">Add Account</Button>
                 </Grid>
+
                 <Grid item>
+                    <Button variant="contained" color="primary">Edit Account</Button>
+                </Grid>
+
+                <Grid item>
+                    <Button variant="contained" color="primary">Deactivate Account</Button>
+                </Grid>
+
+                <Grid item>
+                    <Button variant="contained" color="primary">Delete Account</Button>
+                </Grid>
+              
+            </Grid>
+</Grid>
+
+<Grid item>
+<Container>
                     <Typography variant="h5" gutterBottom>Employees</Typography>
                     <div style={{ height: 400, width: '100%' }}>
                         <DataGrid
@@ -48,8 +69,16 @@ const rows = [
                             disableSelectionOnClick
                         />
                     </div>
-                </Grid>
-            </Grid>
+                    </Container>
+</Grid>
+
+       
+
+           
+
+        </Grid>
+            
+
         </Container>
 </div>
   )

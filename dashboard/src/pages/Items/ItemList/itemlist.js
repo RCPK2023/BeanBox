@@ -1,7 +1,7 @@
 import React from 'react';
 import './itemlist.css';
 import Navbar from '../../navbar/navbar';
-import { Button, Container, Typography } from '@mui/material';
+import { Button, Container, Typography, Grid } from '@mui/material';
 import { DataGrid } from '@mui/x-data-grid';
 import { useNavigate } from 'react-router-dom';
 
@@ -35,13 +35,22 @@ const Itemlist = () => {
 
   return (
     <div id="container">
-      <Navbar />
-      <Container sx={containerStyle}>
-  
-        <Button variant="contained" onClick={handleAddingItem} sx={{ marginBottom: '20px' }}>
-          Add Item
-        </Button>
-        <div style={{ height: 400, width: '100%' }}>
+    <Navbar />
+    <Container sx={containerStyle}>
+      <Grid container direction="column" spacing={2}>
+        <Grid item>
+          <Grid container direction="row" spacing={2}>
+            <Grid item>
+              <Button variant="contained" onClick={handleAddingItem} sx={{ marginBottom: '20px' }}>
+                Add Item
+              </Button>
+              <Button variant="contained" onClick={handleAddingItem} sx={{ marginBottom: '20px' }}>
+                Edit Item
+              </Button>
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item>
           <DataGrid
             rows={rows}
             columns={columns}
@@ -49,9 +58,11 @@ const Itemlist = () => {
             checkboxSelection
             disableSelectionOnClick
           />
-        </div>
-      </Container>
-    </div>
+        </Grid>
+      </Grid>
+    </Container>
+  </div>
+  
   );
 };
 
