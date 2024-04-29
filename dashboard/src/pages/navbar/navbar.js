@@ -32,15 +32,17 @@ const Navbar = () => {
     <div id="container">
       <Container id="form-container-for-navbar">
       
+      {/* Either an additional feature or just scrape this now */}
         {/* Equalizer Icon Button */}
-        <IconButton
+        {/* <IconButton
           variant="text"
           id="navbar-button"
           onClick={(event) => handlePopoverOpen(event, 'equalizer')}>
           <EqualizerIcon/>
-        </IconButton>
+        </IconButton> */}
+
         {/* Equalizer Icon Popover */}
-        <Popover
+        {/* <Popover
           open={Boolean(popoverState['equalizer'])}
           anchorEl={popoverState['equalizer']}
           onClose={() => handlePopoverClose('equalizer')}
@@ -58,7 +60,7 @@ const Navbar = () => {
           <Link to="/salesitem">Sales by Item</Link><br/>
           </Container>
           
-        </Popover>
+        </Popover> */}
 
         {/* ShoppingCart Icon Button */}
         <IconButton
