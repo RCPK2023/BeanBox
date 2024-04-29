@@ -55,7 +55,7 @@ function inventoryhistory() {
       <Grid container>
         <Grid item xs={12}>
           {/* DateRangePicker */}
-          <Typography variant="h5" gutterBottom>Calender</Typography>
+          <Typography variant="h5" gutterBottom>Calendar</Typography>
           <AddWarningIconWhenInvalidRange />
         </Grid>
         <Grid item xs={12}>
